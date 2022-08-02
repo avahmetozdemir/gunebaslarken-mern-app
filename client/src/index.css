@@ -1,0 +1,174 @@
+:root {
+  --color-primary: #5ec576;
+  --color-secondary: #ffcb03;
+  --color-tertiary: #ff585f;
+  --color-primary-darker: #4bbb7d;
+  --color-secondary-darker: #ffbb00;
+  --color-tertiary-darker: #fd424b;
+  --color-primary-opacity: #5ec5763a;
+  --color-secondary-opacity: #ffcd0331;
+  --color-tertiary-opacity: #ff58602d;
+  --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+  --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+  --mainBorderRadius: 0.25rem;
+  --smallWidth: 85vw;
+  --maxWidth: 40rem;
+  --fullWidth: 1170px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  background-color: #f3f3f3;
+}
+
+.slider {
+  max-width: 100rem;
+  height: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+ .slide {
+  top: 0;
+  width: 100%;
+  height: 40rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+.testimonial {
+  width: 65%;
+  position: relative;
+}
+
+
+
+.testimonial__header {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial__text {
+  font-size: 1.7rem;
+  margin-bottom: 3.5rem;
+  color: #666;
+}
+
+.testimonial__author {
+  margin-left: 3rem;
+  font-style: normal;
+
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  column-gap: 2rem;
+}
+
+.testimonial__photo {
+  grid-row: 1 / span 2;
+  width: 6.5rem;
+  border-radius: 50%;
+}
+
+.testimonial__name {
+  font-size: 1.7rem;
+  font-weight: 500;
+  align-self: end;
+  margin: 0;
+}
+
+.testimonial__location {
+  font-size: 1.5rem;
+} 
+
+/*DIGITAL CLOCK */
+
+.timer {
+margin-top: 70px;
+margin-bottom: 50px;
+
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.datetime {
+  color: #fff;
+  background-color: #4bbb7d;
+  font-family: 'Segoe UI', sans-serif;
+  width: 400px;
+  padding: 15px 10px;
+  border: 3px solid #5ec576;
+  border-radius: 5px;
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+
+.datetime:hover {
+  background: #5ec576;
+  box-shadow: 0 0 30px #5ec576;
+}
+
+.date {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time span {
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+/*About Page*/
+.about-section {
+  width: var(--smallWidth);
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
+.about-section p {
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
